@@ -12,4 +12,8 @@ class Testimonial extends Model
         'nameAuthor',
         'user_id'
     ];
+
+    public function user() {
+        return $this->belongsTo('App\User', 'user_id');
+    }
 }

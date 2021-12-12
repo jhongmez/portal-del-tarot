@@ -13,5 +13,9 @@ class Service extends Model
         'image',
         'user_id'
     ];
+
+    public function user() {
+        return $this->belongsTo('App\User', 'user_id');
+    }
     
 }

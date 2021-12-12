@@ -11,5 +11,9 @@ class Header extends Model
         'description',
         'user_id'
     ];
+
+    public function user() {
+        return $this->belongsTo('App\User', 'user_id');
+    }
     
 }
