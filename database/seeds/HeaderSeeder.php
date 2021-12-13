@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use App\Header;
+
 class HeaderSeeder extends Seeder
 {
     /**
@@ -12,5 +14,10 @@ class HeaderSeeder extends Seeder
     public function run()
     {
         //
+        $header = new Header;
+        $header->description = 'Amarres de Amor. Abre Caminos. Endulzamientos.
+        Y Más…';
+        $header->user_id = 1;
+        $header->save();
     }
 }
