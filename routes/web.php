@@ -17,13 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('users', function() {
-    dd( App\User::all() );
-});
-
-Route::get('user/{id}', function($id) {
-    dd( App\User::find($id) );
-});
+// Autenticación
 Auth::routes();
+
+Route::resource('users', 'UserController');
+Route::resource('headers', 'HeaderController');
+Route::resource('services', 'ServiceController');
+Route::resource('testimonials', 'TestimonialController');
 
 Route::get('/home', 'HomeController@index')->name('home');
