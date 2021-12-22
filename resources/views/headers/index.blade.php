@@ -24,14 +24,14 @@
                             <td>{{ $header->id }}</td>
                             <td>{{ $header->description }}</td>
                             <td>
-                                <a href="{{ url('headers/'.$header->id.'/edit') }}" class="btn btn-sm btn-warning">
-                                    Editar
+                                <a href="{{ url('headers/'.$header->id.'/edit') }}" class="btn btn-sm btn-outline-primary">
+                                    <i class="fa fa-pen"></i>
                                 </a>
                                 <form action="{{ url('headers/'.$header->id) }}" method="POST" class="d-inline">
                                     @csrf
                                     @method('DELETE')
                                     <button type="button" class="btn btn-danger btn-delete btn-sm">
-                                        Eliminar
+                                        <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
                             </td>
