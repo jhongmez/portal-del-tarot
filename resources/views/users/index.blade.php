@@ -26,14 +26,14 @@
                             <td>{{ $user->email }}</td>
                             <td>{{ $user->role }}</td>
                             <td>
-                                <a href="{{ url('users/'.$user->id.'/edit') }}" class="btn btn-sm btn-warning">
-                                    Editar
+                                <a href="{{ url('users/'.$user->id.'/edit') }}" class="btn btn-sm btn-outline-primary">
+                                    <i class="fa fa-pen"></i>
                                 </a>
                                 <form action="{{ url('users/'.$user->id) }}" method="POST" class="d-inline">
                                     @csrf
-                                    @method('delete')
+                                    @method('DELETE')
                                     <button type="button" class="btn btn-danger btn-delete btn-sm">
-                                        Eliminar
+                                        <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
                             </td>

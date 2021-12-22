@@ -26,14 +26,14 @@
                             <td>{{ $test->description }}</td>
                             <td>{{ $test->nameAuthor }}</td>
                             <td>
-                                <a href="{{ url('testimonials/'.$test->id.'/edit') }}" class="btn btn-sm btn-warning">
-                                    Editar
+                                <a href="{{ url('testimonials/'.$test->id.'/edit') }}" class="btn btn-sm btn-outline-primary">
+                                    <i class="fa fa-pen"></i>
                                 </a>
                                 <form action="{{ url('testimonials/'.$test->id) }}" method="POST" class="d-inline">
                                     @csrf
                                     @method('DELETE')
                                     <button type="button" class="btn btn-danger btn-delete btn-sm">
-                                        Eliminar
+                                        <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
                             </td>

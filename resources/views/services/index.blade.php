@@ -17,6 +17,7 @@
                         <th>Titulo</th>
                         <th>Descripcion</th>
                         <th>Imagen</th>
+                        <th>Opciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,14 +30,14 @@
                                 <img src="{{ asset($service->image) }}" alt="" width="200">
                             </td>
                             <td>
-                                <a href="{{ url('services/'.$service->id.'/edit') }}" class="btn btn-sm btn-warning">
-                                    Editar
+                                <a href="{{ url('services/'.$service->id.'/edit') }}" class="btn btn-sm btn-outline-primary">
+                                    <i class="fa fa-pen"></i>
                                 </a>
                                 <form action="{{ url('services/'.$service->id) }}" method="POST" class="d-inline">
                                     @csrf
                                     @method('DELETE')
                                     <button type="button" class="btn btn-danger btn-delete btn-sm">
-                                        Eliminar
+                                        <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
                             </td>

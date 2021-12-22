@@ -17,7 +17,7 @@
                       </a>
                   </li>
                   <li class="breadcrumb-item">
-                      <a href="{{ route('testimonials.index') }}">
+                      <a href="{{ route('services.index') }}">
                           <i class="fa fa-users"></i>  
                            Módulo servicios
                       </a>
