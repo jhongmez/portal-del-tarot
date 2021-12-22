@@ -3,10 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Testimonial;
+use App\User;
+
 use Illuminate\Http\Request;
+use App\Http\Requests\TestimonialRequest;
 
 class TestimonialController extends Controller
 {
+    // Proteger la ruta con el middleware
+    public function __construct() {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,6 +22,8 @@ class TestimonialController extends Controller
     public function index()
     {
         //
+        $testimonials = Testimonial::all();
+        return view('testimonials.index')->with('testimonials', $testimonials);
     }
 
     /**
@@ -25,6 +34,7 @@ class TestimonialController extends Controller
     public function create()
     {
         //
+        return view('testimonials.create');
     }
 
     /**
@@ -33,9 +43,20 @@ class TestimonialController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(TestimonialRequest $request)
     {
         //
+        // dd($request->all());
+        $testimonial = new Testimonial;
+        $user        = new User;
+        $testimonial->description = $request->description;
+        $testimonial->nameAuthor  = $request->nameAuthor;
+        $testimonial->user_id     = request()->user()->id;
+
+        // // Guardar encabezado y mostrar mensaje
+        if($testimonial->save()) {
+            return redirect('testimonials')->with('message', 'El testimonio fue adicionado con exito!');
+        }
     }
 
     /**
@@ -58,6 +79,7 @@ class TestimonialController extends Controller
     public function edit(Testimonial $testimonial)
     {
         //
+        return view ('testimonials.edit')->with('testimonial', $testimonial);;
     }
 
     /**
@@ -67,9 +89,16 @@ class TestimonialController extends Controller
      * @param  \App\Testimonial  $testimonial
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(TestimonialRequest $request, Testimonial $testimonial)
     {
         //
+        // dd($request->all());
+        $testimonial->description  = $request->description;
+        $testimonial->nameAuthor   = $request->nameAuthor;
+
+        if($testimonial->save()) {
+            return redirect('testimonials')->with('message', 'El Testimonio fue Modificado con Exito!');
+        }
     }
 
     /**
@@ -81,5 +110,8 @@ class TestimonialController extends Controller
     public function destroy(Testimonial $testimonial)
     {
         //
+        if($testimonial->delete()) {
+            return redirect('testimonials')->with('message', 'El testimonio fue Eliminado con Exito!');
+        } 
     }
 }
