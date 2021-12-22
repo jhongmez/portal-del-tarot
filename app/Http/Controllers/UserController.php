@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+
+    // Proteger la ruta con el middleware
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -17,6 +23,8 @@ class UserController extends Controller
     public function index()
     {
         //
+        $users = User::all();
+        return view('users.index')->with('users', $users);
     }
 
     /**
@@ -27,6 +35,7 @@ class UserController extends Controller
     public function create()
     {
         //
+        return view('users.create');
     }
 
     /**
