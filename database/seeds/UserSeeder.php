@@ -17,8 +17,9 @@ class UserSeeder extends Seeder
 
         $usr = new User;
         $usr->name        = 'Jhon Gomez';
-        $usr->email       = 'jhonsoft@gmail.com';
-        $usr->password    = bcrypt('admin'); //Encriptar
+        $usr->email       = 'johnsoft@gmail.com';
+        $usr->password    = bcrypt('Admin123*'); //Encriptar
+        $usr->role        = 'Administrator';
         $usr->created_at  = now(); //Fecha
         $usr->save();
 

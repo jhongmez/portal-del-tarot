@@ -1,11 +1,15 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '~@fortawesome/fontawesome-free/css/all.css';
 
 // Base
 @import 'base/fonts';
+@import 'base/buttons';
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    font-family: $text;
+}
