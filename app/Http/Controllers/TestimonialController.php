@@ -114,4 +114,10 @@ class TestimonialController extends Controller
             return redirect('testimonials')->with('message', 'El testimonio fue Eliminado con Exito!');
         } 
     }
+
+    // Ordenar Testimonios de home 
+    // public function list_testimonials() {
+    //     $testimonials = Testimonial::orderBy('id', 'desc')->get();
+    //     return view('welcome')->with('testimonials', $testimonials);
+    // }
 }
