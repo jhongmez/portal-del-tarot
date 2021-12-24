@@ -20,6 +20,7 @@ class HeaderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
         $headers = Header::all();
@@ -112,4 +113,13 @@ class HeaderController extends Controller
             return redirect('headers')->with('message', 'El Encabezado fue Eliminado con Exito!');
         } 
     }
+
+    // // Ordenar encabezados de home 
+    // public function list_headers()
+    // {
+    //     $headers = Header::orderBy('id', 'desc')->get();
+    //     return view('welcome')->with('headers', $headers);
+    // }
+
+
 }
