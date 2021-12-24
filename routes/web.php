@@ -20,7 +20,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'WelcomeController@list_data');
 
 // Autenticación
-Auth::routes();
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset'    => false, // Password Reset Routes...
+    'verify'   => false, // Email Verification Routes...
+]);
 
 Route::resource('users', 'UserController');
 Route::resource('headers', 'HeaderController');
