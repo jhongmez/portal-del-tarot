@@ -53,3 +53,14 @@ footer {
 }
 
 
+.button-primary {
+    background-color: $primary-color;
+    font-family: $title;
+    font-size: 1rem;
+}
+
+.big-button-primary {
+    background-color: $primary-color;
+    font-family: $title;
+    font-size: 1.375rem;
+}

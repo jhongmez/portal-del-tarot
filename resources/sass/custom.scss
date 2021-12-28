@@ -146,3 +146,19 @@
 
     }
 }
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    z-index: 1000;
+    transform: translateY(-50%);
+
+    .icons {
+        color: $primary-color;
+        font-size: 30px;
+    }
+}

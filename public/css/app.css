@@ -4621,24 +4621,14 @@ readers do not read off random characters that represent icons */
   font-display: swap;
 }
 
-.button {
-  background-color: transparent;
-  padding: 12px 26px;
-  border: 0;
-  border-radius: 4px;
-  transition: 0.3s ease-in-out;
-  font-size: 16px;
-  font-family: "Abhaya-Libre";
-}
-
-.button.button-primary {
+.button-primary {
   color: #030404;
-  background-color: #F6E831;
+  background-color: #081A36;
 }
 
-.button.button-primary:hover {
+.button-primary:hover {
   transition: 0.2s ease-in-out;
-  background-color: rgba(246, 232, 49, 0.8);
+  background-color: rgba(8, 26, 54, 0.8);
 }
 
 /*!
@@ -15746,6 +15736,22 @@ a.text-dark:focus {
   padding-top: 80px;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  z-index: 1000;
+  transform: translateY(-50%);
+}
+
+aside .icons {
+  color: #F6E831;
+  font-size: 30px;
+}
+
 body {
   font-family: "Open-Sans";
 }
@@ -15786,5 +15792,17 @@ footer p {
 footer p img {
   margin-left: 4px;
   width: 100px;
+}
+
+.button-primary {
+  background-color: #F6E831;
+  font-family: "Abhaya-Libre";
+  font-size: 1rem;
+}
+
+.big-button-primary {
+  background-color: #F6E831;
+  font-family: "Abhaya-Libre";
+  font-size: 1.375rem;
 }
 
