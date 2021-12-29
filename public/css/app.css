@@ -15640,6 +15640,13 @@ a.text-dark:focus {
   border-radius: 0;
 }
 
+.services .services-content__carousel .card img {
+  width: auto;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .services .services-content__carousel .card-body {
   background-color: #081A36;
   padding-left: 0;
