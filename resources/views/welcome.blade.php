@@ -161,7 +161,7 @@
         <footer>
             <div class="d-flex justify-content-center">
                 <p>
-                    Copyright @ 2021 El Portal Del Tarot - Desarrollado por <a href="https://www.linkedin.com/in/jhongomezmarin96/"><img src="{{ asset('images/logo/johnsoft.svg')}}" alt="Jhon Gomez Marin"></a>
+                    Copyright @ 2021 El Portal Del Tarot - Desarrollado por <a href="https://www.instagram.com/jhon_gomezm"><img src="{{ asset('images/logo/johnsoft.svg')}}" alt="Jhon Gomez Marin"></a>
                 </p>
             </div>
         </footer>
