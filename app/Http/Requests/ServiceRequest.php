@@ -26,13 +26,11 @@ class ServiceRequest extends FormRequest
         if ($this->method() == 'PUT') {
             return [
                 'title'         => 'required',
-                'description'   => 'required',
                 'image'         => 'image',
             ];
         } else {
             return [
                 'title'         => 'required',
-                'description'   => 'required',
                 'image'         => 'required|image',
             ];
         }
@@ -41,7 +39,6 @@ class ServiceRequest extends FormRequest
 
     public function messages() {
         return [
-            'description.required' => 'El campo "Descripción" es requerido',
             'title.required' =>  'El campo "Autor del testimonio" es requerido',
             'image.required' =>  'El campo "Imagen" es requerido',
             'image.image'    =>  'Debe de ser una Imagen',

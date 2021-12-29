@@ -16,7 +16,7 @@ class CreateServicesTable extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->string('image')->default('images/no-service.png');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
