@@ -31,10 +31,10 @@
                         @endforeach
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button class="btn button-primary">
+                        <a href="https://wa.link/cshv85" class="btn button-primary">
                             <i class="fab fa-whatsapp"></i>
                             Contáctanos
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -137,10 +137,10 @@
                                 Nuestro trabajo es garantizado y contamos con mas de 4 años de experiencia,  por eso si quieres recibir una atención personalizada puedes escribirnos a nuestro WhatsApp dando clic en este botón.
                             </p>
                             <div class="d-flex justify-content-center">
-                                <button class="btn btn-lg big-button-primary mt-5">
+                                <a href="https://wa.link/cshv85" class="btn btn-lg big-button-primary mt-5">
                                     <i class="fab fa-whatsapp"></i>
                                     Quiero una consulta
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -150,11 +150,11 @@
         {{-- Aside --}}
         <aside>
             {{-- Facebook --}}
-            <a href="" class="icons icon-facebook">
+            <a href="https://www.facebook.com/Lecturadetarott1" class="icons icon-facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
             {{-- Whatsapp --}}
-            <a href="" class="icons icon-whatsapp">
+            <a href="https://wa.link/cshv85" class="icons icon-whatsapp">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </aside>
@@ -196,6 +196,17 @@
                     margin:10,
                     responsiveClass: true,
                     responsive:{
+                        0:{
+                            items:1,
+                            loop:true,
+                            nav:true
+                        },
+                        600:{
+                            items:1,
+                            nav:true,
+                            loop:true,
+                            autoplay: true
+                        },
                         1000:{
                             items:1,
                             nav:true,

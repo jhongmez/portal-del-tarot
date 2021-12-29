@@ -15798,11 +15798,34 @@ footer p img {
   background-color: #F6E831;
   font-family: "Abhaya-Libre";
   font-size: 1rem;
+  -webkit-animation: 0.2s ease-in-out;
+          animation: 0.2s ease-in-out;
+}
+
+.button-primary:hover {
+  background-color: rgba(246, 232, 49, 0.9);
+  -webkit-animation: 0.2s ease-in-out;
+          animation: 0.2s ease-in-out;
 }
 
 .big-button-primary {
   background-color: #F6E831;
   font-family: "Abhaya-Libre";
   font-size: 1.375rem;
+  -webkit-animation: 0.2s ease-in-out;
+          animation: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.big-button-primary i {
+  margin-right: 10px;
+  font-size: 28px;
+}
+
+.big-button-primary:hover {
+  background-color: rgba(246, 232, 49, 0.9);
+  -webkit-animation: 0.2s ease-in-out;
+          animation: 0.2s ease-in-out;
 }
 
