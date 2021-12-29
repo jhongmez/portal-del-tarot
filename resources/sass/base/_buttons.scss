@@ -1,20 +1,10 @@
 @import '../variables';
 
-.button {
-    background-color: transparent;
-    padding: 12px 26px;
-    border: 0;
-    border-radius: 4px;
-    transition: .3s ease-in-out;
-    font-size: 16px;
-    font-family: $title;
-
-    &.button-primary {
-        color: $black;
-        background-color: $primary-color;
-        &:hover {
-            transition: .2s ease-in-out;
-            background-color: rgba($primary-color, 0.8);
-        }
+.button-primary {
+    color: $black;
+    background-color: $secondary-color;
+    &:hover {
+        transition: .2s ease-in-out;
+        background-color: rgba($secondary-color, 0.8);
     }
 }

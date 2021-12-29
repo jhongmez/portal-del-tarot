@@ -53,3 +53,33 @@ footer {
 }
 
 
+.button-primary {
+    background-color: $primary-color;
+    font-family: $title;
+    font-size: 1rem;
+    animation: .2s ease-in-out;
+
+    &:hover {
+        background-color: rgba($primary-color, 0.9);
+        animation: .2s ease-in-out;
+    }
+}
+
+.big-button-primary {
+    background-color: $primary-color;
+    font-family: $title;
+    font-size: 1.375rem;
+    animation: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+
+    i {
+        margin-right: 10px;
+        font-size: 28px;
+    }
+
+    &:hover {
+        background-color: rgba($primary-color, 0.9);
+        animation: .2s ease-in-out;
+    }
+}
