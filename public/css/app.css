@@ -15749,7 +15749,7 @@ aside {
   align-items: center;
   position: fixed;
   top: 50%;
-  right: 20px;
+  right: 40px;
   z-index: 1000;
   transform: translateY(-50%);
 }
