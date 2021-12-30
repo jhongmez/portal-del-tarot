@@ -62,9 +62,9 @@
                                 @endforeach
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button class="btn button-primary mt-5">
+                                <a href="https://wa.link/cshv85" class="btn button-primary mt-5">
                                     Quiero conocer más
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
