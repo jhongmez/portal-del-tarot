@@ -8,6 +8,7 @@
         <meta property="og:title" content="Portal del Tarot | Amarres de Amor - Limpieza Espiritual">
         <meta property="og:site_name" content="Portal del Tarot | Amarres de Amor - Limpieza Espiritual">
         <meta property="og:description" content="Portal del Tarot es un sitio web donde puedes contactarnos para agendar una cita, ver nuestros servicios y algunos de nuestros clientes dan sus testimonios. Realizamos AMARRES DE AMOR, LIMPIEZA ESPIRITUAL, ENTRE OTROS..." />
+        <meta name="keywords" content="El portal del tarot, amarres de amor, amarres de amor para  mi pareja, amarres de amor para mi novio, amarres de amor para mi novia, amarres de amor para mi esposo, amarres de amor para mi esposa, amarres de amor en Manizales, amarres de amor en Pereira, amarres de amor en Cali, amarres de amor en Bogotá, lectura del tarot, lectura de tarot virtual, lectura del tarot gratis, limpieza espiritual, abre caminos, tarot de amor, el portal del tarot Colombia, Astrologia, Tarot de los angeles">
 
         <title>Portal del Tarot | Amarres de Amor - Limpieza Espiritual</title>
 
